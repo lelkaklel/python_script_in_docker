@@ -5,4 +5,4 @@ WORKDIR $APP_HOME
 COPY scripts/* $APP_HOME/
 RUN chmod +x entrypoint.sh script.py
 RUN pip install -r requirements.txt
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["python3", "script.py"]
